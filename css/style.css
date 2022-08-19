@@ -1,0 +1,45 @@
+:root {
+  --primary-color: darkviolet;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Start Header Section */
+/* Start Header Introl */
+
+.headerintros {
+  color: #ffff;
+  background-color: var(--primary-color);
+
+  padding: 15px 0;
+  /* display: none; */
+}
+
+@media (min-width: 1200px) {
+  .visiblegs {
+    display: block;
+  }
+}
+
+.infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.headerintros a {
+  color: #ffff;
+}
+
+/* End Header Introl */
+/* End Header Section  */
