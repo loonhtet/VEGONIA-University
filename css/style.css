@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
 :root {
   --primary-color: darkviolet;
+  --primary-grad-color: linear-gradient(to left, darkviolet, deepskyblue);
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -12,6 +16,11 @@ body {
 }
 
 /* Start Header Section */
+
+header {
+  height: 80vh;
+  background: var(--primary-grad-color);
+}
 /* Start Header Introl */
 
 .headerintros {
@@ -42,4 +51,58 @@ body {
 }
 
 /* End Header Introl */
+
+/* Start Nav Bar  */
+
+.menustyles li a {
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+
+  transition: all 0.3s;
+}
+
+.menustyles li a:hover {
+  color: var(--primary-color);
+}
+
+.navbuttons {
+  border: none;
+}
+
+.navbuttons:focus {
+  box-shadow: none;
+}
+
+.lines1,
+.lines2,
+.lines3 {
+  width: 17px;
+  height: 3px;
+  margin: 3px 0;
+}
+
+.crossxs .lines1 {
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+.crossxs .lines2 {
+  opacity: 0;
+}
+.crossxs .lines3 {
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+/* End Nav Bar  */
+
+/* Start Banner  */
+
+.banners {
+  width: 90%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* End Banner  */
+
 /* End Header Section  */

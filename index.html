@@ -67,7 +67,7 @@
       <!-- End Header Intro  -->
 
       <!-- Start Nav Bar  -->
-      <nav>
+      <nav class="navbar navbar-expand-lg bg-light">
         <a href="index.html" class="navbar-brand mx-3">
           <img
             src="./assets/img/fav/favicon1.png"
@@ -79,21 +79,46 @@
           >
         </a>
 
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shortcode</a></li>
-            <li><a href="#">Structure</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+        <button
+          class="navbar-toggler navbuttons"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse"
+        >
+          <div class="bg-dark lines1"></div>
+          <div class="bg-dark lines2"></div>
+          <div class="bg-dark lines3"></div>
+        </button>
+
+        <div
+          id="collapse"
+          class="navbar-collapse collapse justify-content-end text-uppercase fw-bolder"
+        >
+          <ul class="navbar-nav menustyles">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Shortcode</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Structure</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
       <!-- End Nav Bar  -->
 
       <!-- Start Banner  -->
+      <div class="text-light text-md-end text-center banners">
+        <h4 class="display-4 bannerheaders">VEGONIA University</h4>
+        <p class="lead bannerparagraphs">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit,
+          velit!
+        </p>
+        <a
+          href="javascript:void(0);"
+          class="btn btn-outline-light rounded-0 bannerbtn"
+          >View More</a
+        >
+      </div>
       <!-- End Banner  -->
     </header>
     <!-- End Header Section  -->
