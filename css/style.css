@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: darkviolet;
+  --secondary-color: darkblue;
   --primary-grad-color: linear-gradient(to left, darkviolet, deepskyblue);
 }
 
@@ -130,7 +131,7 @@ header {
 @keyframes bnanis {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(80px);
   }
 
   to {
@@ -152,10 +153,69 @@ header {
 .waves {
   width: 100%;
   position: absolute;
-  bottom: 0;
-  left: -5px;
+  bottom: -5px;
+  left: 0;
 
   z-index: 2;
 }
 
 /* End Header Section  */
+
+/* Start Students Counter Section */
+
+.counters {
+  width: 100%;
+  height: 20vh;
+  font-weight: bolder;
+  letter-spacing: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counteritems {
+  width: 25%;
+  text-align: center;
+
+  float: left;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.counteritems:last-child {
+  border: none;
+}
+
+.counteritems .fas {
+  background: var(--primary-grad-color);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.counteritems h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* End Students Counter Section  */
+
+/* Start About Us Section  */
+
+.aboutuss {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/banner/banner4.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutuss ul li {
+  list-style-type: none;
+  background-color: var(--secondary-color);
+  margin: 20px 0;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+/* End About Us Section  */
