@@ -5,6 +5,15 @@
   --primary-grad-color: linear-gradient(to left, darkviolet, deepskyblue);
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
@@ -20,6 +29,8 @@ body {
 header {
   height: 80vh;
   background: var(--primary-grad-color);
+
+  position: relative;
 }
 /* Start Header Introl */
 
@@ -103,6 +114,48 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.bannerheaders {
+  font-weight: bold;
+  letter-spacing: 3px;
+  animation: bnanis 2s;
+}
+
+.bannerparagraphs,
+.bannerbtn {
+  animation: bnanis 2s 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bnanis {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* End Banner  */
+
+.studentgroups {
+  width: 45%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.waves {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+
+  z-index: 2;
+}
 
 /* End Header Section  */
