@@ -1,6 +1,19 @@
 // Start Jquery Area
 $(document).ready(function () {
   // Start Header
+
+  // Start Login Box
+
+  $("open-btn").click(function () {
+    document.getElementById("form-popup").style.display = "block";
+  });
+
+  $("#formclose-btn").click(function () {
+    document.getElementById("form-popup").style.display = "none";
+  });
+
+  // End Login Box
+
   // Start Nav Bar
 
   $(".navbuttons").click(function () {
@@ -84,5 +97,9 @@ function drawChart() {
 // end google code for chart
 
 // End Rating Section
+
+const getyear = document.getElementById("getyear");
+const getfullyear = new Date().getUTCFullYear();
+getyear = getfullyear;
 
 // End Javascript Area

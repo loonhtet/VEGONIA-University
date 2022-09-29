@@ -624,4 +624,67 @@ nav {
   background-color: darkblue;
 }
 
+.backtotopbtn {
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+}
+
+.backtotopbtn:hover {
+  background-color: #555;
+}
+
 /* End Footer Section  */
+
+/* Start Login Box  */
+
+.open-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #555;
+  border-radius: 50%;
+  color: #fff;
+
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.open-btn:hover {
+  opacity: 1;
+}
+
+.form-popup {
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 100;
+}
+
+.form-container {
+  width: 300px;
+  padding: 10px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* End Login Box  */

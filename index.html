@@ -32,6 +32,56 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
   <body>
+    <!-- Start Stick Note  -->
+    <div class="sticknotes">
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </div>
+    <!-- End Stick Note  -->
+
+    <!-- Start Login Box  -->
+    <button id="openform" class="open-btn"><i class="fas fa-user"></i></button>
+
+    <div id="form-popup" class="form-popup">
+      <form action="" class="form-container">
+        <h6>Login Here</h6>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-info btn-sm rounded-0 mb-2">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- End Login Box  -->
+
     <!-- Start Header Section  -->
     <header>
       <!-- Start Header Intro  -->
@@ -1065,6 +1115,32 @@
       </div>
     </footer>
     <!-- End Footer Section  -->
+
+    <footer class="bg-dark px-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div
+            class="d-flex justify-content-between border-top pt-4 text-light"
+          >
+            <p>
+              Copyright &copy; <span id="getyear"></span>
+              <a href="" class="text-danger"> Pro</a> All rights
+            </p>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"
+                  ><i
+                    id="formclose-btn"
+                    class="fas fa-angle-up backtotopbtn"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap css1 js1  -->
     <script
